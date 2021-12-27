@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function in_snt(a) {
+        let so_nguyen_to = 2
+        for (so_nguyen_to; so_nguyen_to < a ;) {
+            let flag = true
+            for (let i = 2; i < so_nguyen_to ; i++) {
+                if (so_nguyen_to % i == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag){
+                document.write(so_nguyen_to + "<br>")
+                so_nguyen_to++
+            }else {
+                so_nguyen_to++
+            }
+        }
+    }
+    let a2 = +prompt("Nhap vao so nguyen bat ky")
+    document.write(in_snt(a2))
+
+</script>
+
+</body>
+</html>
