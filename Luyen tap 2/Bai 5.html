@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinh_tich_snt_arr(arr) {
+        let count = 0
+        let tich = 1
+        for (let i = 0; i < arr.length; i++) {
+
+            let so_nguyen_to = arr[i]
+            let flag = true
+            for (let j = 2; j < arr[i] ; j++) {
+                if (arr[i] % j == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag){
+                count++
+                tich *= arr[i]
+            }
+        }
+        if (count == 0){
+            return "Mang khong co so nguyen to"
+        }else {
+            return "Tich cac so nguyen to trong mang la : " + tich
+        }
+
+    }
+    let arr2 = [4,6,8,10]
+    alert(tinh_tich_snt_arr(arr2))
+</script>
+</body>
+</html>

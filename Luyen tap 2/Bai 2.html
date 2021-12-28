@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function dem_count(arr,x) {
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == x){
+                count++
+            }
+        }return "So nay xuat hien : " + count + " lan trong mang"
+    }
+    let a = +prompt("Nhap gia tri bat ky")
+    let arr2 = [1,3,5,7,9]
+    alert(dem_count(arr2,a))
+</script>
+</body>
+</html>

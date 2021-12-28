@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tim_max2(arr) {
+        let max1 = 0
+        let max2 = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max1){
+                max1 = arr[i]
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max2 && arr[i] < max1){
+                max2 = arr[i]
+            }
+        }
+        return "Phan tu lon thu hai trong mang la : " + max2
+
+    }
+    let arr2 = [90,3,5,9,8]
+    alert(tim_max2(arr2))
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinh_nam_nhuan(a) {
+        if (a % 4 == 0 && a % 100 != 0 || a % 100 == 0 && a % 400 == 0){
+            return "Nam " + a + " la nam nhuan"
+        }else {
+            return "Nam " + a + " khong phai la nam nhuan"
+        }
+    }
+    let x = +prompt("Nhap so nam bat ky")
+    alert(tinh_nam_nhuan(x))
+</script>
+
+</body>
+</html>
